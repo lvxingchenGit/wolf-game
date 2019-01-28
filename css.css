@@ -1,0 +1,135 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        font-family: '微软雅黑';
+    }
+
+    .wrapper {
+        width: 320px;
+        height: 480px;
+        background: url('img/game_bg.jpg') 0 0 no-repeat;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    #count {
+        position: absolute;
+        top: 11px;
+        left: 60px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #countDown {
+        width: 180px;
+        height: 16px;
+        background: url('img/progress.png') 0 0 no-repeat;
+        position: absolute;
+        top: 66px;
+        left: 63px;
+    }
+
+    #wolfs img {
+        position: absolute;
+    }
+
+    #menu {
+        width: 320px;
+        text-align: center;
+        position: absolute;
+        top: 229px;
+        left: 0px;
+        display: block;
+    }
+
+    #menu .gameStart,
+    .gameShow {
+        font-size: 35px;
+        color: rgb(255, 115, 0);
+        text-shadow: 0 0 5px rgb(255, 251, 0);
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #menu .gameStart:hover{
+        font-size:36px;
+    }
+    #menu .gameShow:hover{
+        font-size:36px;
+    }
+    #menu .gameShow {
+        margin-top: 4px;
+    }
+
+    #gameOver {
+        position: absolute;
+        top: 229px;
+        left: 0px;
+        text-align: center;
+        display: none;
+    }
+
+    #gameOver a {
+        font-size: 35px;
+        color: rgb(255, 115, 0);
+        text-shadow: 0 0 5px rgb(255, 251, 0);
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        width: 320px;
+    }
+    .author{
+            position: absolute;
+            bottom: 30px;
+            left:150px;
+            color:rgb(168, 101, 0);
+            font-size: 9px;
+            display: block;
+    }
+    .cover{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width:320px;
+            height:480px;
+            background:rgba(14, 14, 14, 0.8);
+            display: none;
+}
+/* 关闭按钮 */
+.cover .timg-box{
+        position: absolute;
+        top:8px;
+        right:20px;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        background: rgb(109, 109, 109);
+        cursor: pointer;
+}
+.cover .timg-box:hover{
+        background: rgb(145, 145, 145);
+}
+.cover .timg-box .timg{
+        background: url('img/timg.png') 0 0 no-repeat;
+        width:20px;
+        height:20px;
+        font-size: 10px;
+        position: absolute;
+        top:-25px;
+        right:14px;
+        
+}
+/* 游戏说明 */
+.cover span{
+        display: block;
+        width:260px;
+        color:#fff;
+        font-size:9px;
+        margin:40px auto;
+        line-height:22px;
+}
+.cover span .explain{
+        font-size:13px;
+        font-weight:bold;
+}
