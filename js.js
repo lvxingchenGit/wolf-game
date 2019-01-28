@@ -68,14 +68,14 @@ gameStart.onclick = function () {
                 //随机生成狼的类型（大灰狼和小灰灰）
                 randType > 80 ? wolf.type = 'x' : wolf.type = 'h';
                 wolf.index = 0;
-                wolf.src = 'img/' + wolf.type + wolf.index + '.png';//拼接狼的类型和下标
+                wolf.src = './img/' + wolf.type + wolf.index + '.png';//拼接狼的类型和下标
                 oWolfs.appendChild(wolf);//犯过错误：appendChild 中的C一定要大写
 
                 //创建一个狼向上移动的动画
                 wolf.upTime = setInterval(function () {
                         wolf.index++;
                         if (wolf.index <= 5) {
-                                wolf.src = 'img/' + wolf.type + wolf.index + '.png';
+                                wolf.src = './img/' + wolf.type + wolf.index + '.png';
                         } else {
                                 clearInterval(wolf.upTime);
                                 //创建一个狼向下的动画
@@ -85,7 +85,7 @@ gameStart.onclick = function () {
                                                 clearInterval(wolf.downTime);
                                                 oWolfs.removeChild(wolf);//犯过错误：没写狼生成之后，动画下去之后，应该把狼删除掉
                                         }
-                                        wolf.src = 'img/' + wolf.type + wolf.index + '.png';
+                                        wolf.src = './img/' + wolf.type + wolf.index + '.png';
                                 }, 80)
                         }
                 }, 100)
@@ -106,7 +106,7 @@ gameStart.onclick = function () {
                                                 clearInterval(wolf.hitTimer);
                                                 oWolfs.removeChild(wolf);
                                         }
-                                        wolf.src = 'img/' + wolf.type + wolf.index + '.png';
+                                        wolf.src = './img/' + wolf.type + wolf.index + '.png';
                                 }, 100)
                         }
                         key = false;
